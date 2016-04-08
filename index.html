@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<!-- no easter eggs here
+	nice try tho 
+	try looking in other files, plenty of txt here	
+	-->
+
+<head>
+	<title>GREETINGS, HUMAN! An Undertale logo creator.</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	
+</head>
+<body>
+
+	
+
+	<h1 align="center">GREETINGS, HUMAN!</h1>
+	<h2 align="center">AN UNDERTALE LOGO CREATOR</h2>
+	<textarea rows="2" id="input"></textarea>
+	<p>Preview:</p>
+	<div id="cc"><canvas id="logo" height="50px"></canvas></div>
+	<img id="res">
+	<br><br><br><br><br>
+	<a href="#" class="button" id="down" onclick="getImage()">DO IT!</button>
+	
+	<script type="text/javascript">
+		var tCtx = document.getElementById('logo').getContext('2d');
+    	var imageElem = document.getElementById('res');
+
+		document.getElementById('input').addEventListener('keyup', function (){
+    		tCtx.canvas.width = tCtx.measureText(this.value).width + 30;
+    		tCtx.font = '50px lorem';
+    		tCtx.fillStyle = 'white';
+    		tCtx.fillText(this.value.toUpperCase(), 25, 50);
+    		imageElem.src = tCtx.canvas.toDataURL();
+    		console.log(imageElem.src);
+		}, false);
+		
+		function getImage(){
+			document.getElementById('down').href = tCtx.canvas.toDataURL();
+		}
+	</script>	
+	<br><br><br><br><br>
+	<h3><a id="speciala" href="https://www.behance.net/gallery/31378523/Monster-Friend-Undertale-Logo-Font">Monster Friend font by Harry Wakamatsu</a>. <a id="speciala" href="http://undertale.com/">Undertale by Toby Fox</a>. GREETINGS, HUMAN! by Ruyi Li.<a id="speciala" href="https://www.behance.net/gallery/31268855/Determination-Better-Undertale-Font">Determination font by Harry Wakamatsu.</a></h3>
+	
+</body>
+</html>
