@@ -1,0 +1,74 @@
+html, body {
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto Mono', 'Consolas', sans-serif;
+    font-weight: 400;
+
+    background-color: #181818;
+    color: white;
+    text-align: center;
+
+    padding: 2rem 0 0;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+div.box {
+    display: inline-block;
+    margin: 3rem auto auto;
+    padding: 50px;
+
+    background-color: #232323;
+    box-shadow: 0 0 10px 5px black;
+}
+
+input, label {
+    font-family: inherit;
+    display: block;
+    font-size: 1rem;
+    text-align: left;
+}
+
+input[type="text"] {
+    outline: none;
+    font-size: 1.25rem;
+    padding: 5px;
+    margin-top: 2px;
+}
+
+input[type="submit"] {
+    margin: 20px auto;
+    background: transparent;
+    color: white;
+    outline: none;
+    border: 2px solid white;
+    cursor: pointer;
+    padding: 0.5rem 0.8rem;
+}
+
+input[type="submit"]:hover {
+    background: white;
+    color: #181818;
+}
+
+footer {
+    margin-top: 5rem;
+    background-color: #232323;
+    padding: 3rem 0 2rem;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    background-color: #8487FF;
+}

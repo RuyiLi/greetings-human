@@ -1,0 +1,12 @@
+{
+  "name": "greetings-human",
+  "author": "Ruyi Li",
+  "scripts": {
+    "dev": "rimraf dist/* && parcel index.html --open",
+    "build": "rimraf dist/* && parcel build index.html"
+  },
+  "devDependencies": {
+    "parcel": "^1.12.4",
+    "rimraf": "^3.0.2"
+  }
+}

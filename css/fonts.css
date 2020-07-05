@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'MonsterFriendCenter';
+    src: url('/fonts/MonsterFriend2Center.eot');
+    src: url('/fonts/MonsterFriend2Center.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/MonsterFriend2Center.woff2') format('woff2'),
+        url('/fonts/MonsterFriend2Center.woff') format('woff'),
+        url('/fonts/MonsterFriend2Center.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MonsterFriendBack';
+    src: url('/fonts/MonsterFriend2Back.eot');
+    src: url('/fonts/MonsterFriend2Back.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/MonsterFriend2Back.woff2') format('woff2'),
+        url('/fonts/MonsterFriend2Back.woff') format('woff'),
+        url('/fonts/MonsterFriend2Back.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MonsterFriendFore';
+    src: url('/fonts/MonsterFriend2Fore.eot');
+    src: url('/fonts/MonsterFriend2Fore.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/MonsterFriend2Fore.woff2') format('woff2'),
+        url('/fonts/MonsterFriend2Fore.woff') format('woff'),
+        url('/fonts/MonsterFriend2Fore.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
