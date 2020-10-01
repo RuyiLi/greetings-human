@@ -27,7 +27,7 @@ div.box {
     padding: 50px;
 
     background-color: #232323;
-    box-shadow: 0 0 10px 5px black;
+    box-shadow: 0 0 30px 0px #131313;
 }
 
 input, label {
