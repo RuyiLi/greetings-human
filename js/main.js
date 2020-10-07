@@ -2,6 +2,7 @@ const $ = document.querySelector.bind(document);
 
 const mainForm = $('form#logo-generator');
 const logoText = $('input#logo-text');
+const heartsEnabled = $('input#hearts-enabled');
 const canvas = $('canvas#output-logo');
 const ctx = canvas.getContext('2d');
 
@@ -26,10 +27,12 @@ function generateLogo (text) {
     ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
     ctx.fillText(text, 0, fontSize);
 
-    // Second layer
-    ctx.font = fontSize + 'px MonsterFriendCenter';
-    ctx.fillStyle = 'red';
-    ctx.fillText(text, 0, fontSize);
+    if (heartsEnabled.checked) {
+        // Second layer
+        ctx.font = fontSize + 'px MonsterFriendCenter';
+        ctx.fillStyle = 'red';
+        ctx.fillText(text, 0, fontSize);
+    }
 
     // Third layer
     ctx.font = fontSize + 'px MonsterFriendFore';
