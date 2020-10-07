@@ -72,3 +72,11 @@ a {
 a:hover {
     background-color: #8487FF;
 }
+
+input#hearts-enabled {
+    display: inline-block;
+}
+
+.hidden {
+    display: none;
+}
