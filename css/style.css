@@ -74,7 +74,11 @@ a:hover {
 }
 
 input#hearts-enabled {
-    display: inline-block;
+    display: none;
+}
+
+label[for="hearts-enabled"], strong#hearts-enabled-indicator {
+    cursor: pointer;
 }
 
 .hidden {
