@@ -3,6 +3,7 @@ const $ = document.querySelector.bind(document);
 const mainForm = $('form#logo-generator');
 const logoText = $('input#logo-text');
 const heartsEnabled = $('input#hearts-enabled');
+const heartsEnabledIndicator = $('strong#hearts-enabled-indicator');
 const canvas = $('canvas#output-logo');
 const ctx = canvas.getContext('2d');
 
@@ -11,6 +12,10 @@ const fontSize = 50;
 mainForm.addEventListener('submit', function (evt) {
     evt.preventDefault();
     generateLogo(logoText.value.toUpperCase());
+});
+
+heartsEnabled.addEventListener('click', function (evt) {
+    heartsEnabledIndicator.innerText = evt.target.checked ? 'Yes' : 'No';
 });
 
 function generateLogo (text) {
